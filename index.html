@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Définition des métadonnées -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Inclusion des feuilles de style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gestion de Tache</title>
+</head>
+<body>
+
+    <div class="main">
+        <!-- En-tête avec barre de recherche et bouton d'ajout -->
+        <div class="haut">
+            <div class="recherche">
+                <!-- Champ de recherche -->
+                <input type="search" placeholder="Rechercher" id="searchInput">
+                <!-- Bouton de recherche -->
+                <button type="submit" id="recherche"><img src="Images/rechercher.png" alt="Rechercher"></button>
+            </div>
+            <!-- Bouton d'ajout -->
+            <div class="btn_add">
+                <button id="add"><a href="Formulaire.html">Ajouter</a></button>
+            </div>
+        </div>
+        
+        <div class="tableau">
+            <table>
+                <!-- En-tête du tableau -->
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Description</th>
+                        <th>Date Début</th>
+                        <th>Date Fin</th>
+                        <th>Statut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <!-- Corps du tableau -->
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

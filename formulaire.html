@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+    <title>Formulaire</title>
+</head>
+<body>
+    <div class="form_main">
+    <form id="myForm">
+        <!-- Bouton de retour à la page d'index -->
+        <div class="back">
+            <button><a href="Index.html"><<</a></button>
+        </div>
+
+        <h1>Ajouter une Tache</h1>
+        <!-- Séparation visuelle -->
+        <div class="separation"></div>
+
+        <!-- Corps du formulaire -->
+        <div class="corps-formulaire">
+
+            <!-- Section gauche du formulaire -->
+            <div class="gauche">
+                <div class="groupe">
+                    <label>Nom Tache</label>
+                    <input type="text" id="nom" name="nom" required autocomplete="off" />
+                </div>
+                <div class="groupe">
+                    <label>Date Debut</label>
+                    <input type="datetime-local" id="date_debut" name="date_debut" required/>
+                </div>
+                <div class="groupe">
+                    <label>Date Fin</label>
+                    <input type="datetime-local" id="date_fin" name="date_fin" required/>
+                </div>
+            </div>
+
+            <!-- Section droite du formulaire -->
+            <div class="droite">
+                <div class="groupe">
+                    <label>Description</label>
+                    <textarea placeholder="Saisissez ici..." id="description" name="description"></textarea>
+                </div>
+            </div>
+        </div>
+        <!-- Pied du formulaire avec le bouton d'enregistrement -->
+        <div class="pied-formulaire" align="center">
+            <button id="submit">Enregistrer</button> 
+        </div>
+    </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
