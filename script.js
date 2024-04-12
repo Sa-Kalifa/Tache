@@ -40,18 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    // Fonction pour ouvrir la page Modifier.html avec l'ID de la tâche à modifier
+    function ouvrirModifierPage(id) {
+        localStorage.setItem('editId', id); // Stockage de l'ID de la tâche à modifier dans le stockage local
+        window.location.href = 'modifier.html'; // Redirection vers la page de modification
+    }
+
     // Gestion de l'événement de clic sur les boutons de suppression
     supprimerButtons.forEach((button, index) => {
         button.addEventListener('click', () => {
             supprimerTache(index); // Appel de la fonction pour supprimer la tâche correspondante
         });
     });
-
-    // Fonction pour ouvrir la page Modifier.html avec l'ID de la tâche à modifier
-    function ouvrirModifierPage(id) {
-        localStorage.setItem('editId', id); // Stockage de l'ID de la tâche à modifier dans le stockage local
-        window.location.href = 'modifier.html'; // Redirection vers la page de modification
-    }
 
     // Fonction pour supprimer une tâche
     function supprimerTache(index) {
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
 
         // Redirection vers la page d'index après l'enregistrement
-        window.location.href = 'index.html';
+        window.location.href = 'Index.html';
 
         // Réinitialisation du formulaire
         form.reset();
