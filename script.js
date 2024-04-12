@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem('formDataArray', JSON.stringify(formDataArray));
 
         // Redirection vers la page d'index après l'enregistrement
-        window.location.href = 'Index.html';
+        window.location.href = 'index.html';
 
         // Réinitialisation du formulaire
         form.reset();
